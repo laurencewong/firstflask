@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Laurence Wong</title>
+    <link rel="stylesheet" href="/static/style.css">
+  </head>
+  <body>
+      <h1>{% block heading %}{% endblock %}</h1>
+
+        {% block body %}
+        {% endblock %}
+      <a href = "{{ url_for('names')}}">Names</a>
+      <a href = "{{ url_for('index')}}">Home</a>
+    <script src="/static/scripts.js" charset="utf-8"></script>
+  </body>
+</html>
